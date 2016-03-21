@@ -31,7 +31,7 @@ memwatch.wrapHeapDiff(<target>, <functionName>);
 Should be a valid javascript object.
 
 #### functionName
-Should be a string pointing to a valid function on <target>. 
+Should be a string pointing to a valid function on target. 
 Sub-property references are allowed.
 
 For example:
@@ -46,7 +46,7 @@ memwatch.wrapHeapDiff(MyObject, ['SubObject','Fuction']);
 For more possibilities check the path parameter here: https://lodash.com/docs#get
 
 #### Wildcards
-If you wish all functions of an object to be wrapped, simply use the '*' for functionName.
+If you wish all functions of an object to be wrapped, simply use '*' for functionName.
 ```js
 var WrapAll = {
   function1: function () {},
@@ -59,7 +59,7 @@ memwatch.wrapHeapDiff(WrapAll, '*');
 In the above example function1, function2 and function3 will get wrapped.
 
 ```js
-var Wrap = {
+var WrapAll = {
   all: {
     function4: function () {},
     function5: function () {},
@@ -94,7 +94,7 @@ function heapStartCallback(target, functionName) {
 Fired after heap difference calculation ends.
 
 The callback method registered for this even should have three parameters.
-First receiving the target object, second the functionName string and the third the calculation result object.
+First one receiving the target object, second the functionName string and the third the calculation result object.
 ```js
 function heapEndCallback(target, functionName, diffResult) {
 }
