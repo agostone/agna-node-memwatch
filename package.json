@@ -1,0 +1,27 @@
+{
+  "name": "agna-node-memwatch",
+  "version": "0.0.1",
+  "description": "Keep an eye on your memory usage, and discover and isolate leaks.",
+  "main": "MemWatch.js",
+  "keywords": [
+    "memwatch",
+    "memory",
+    "leak"
+  ],
+  "author": {
+    "name": "Agoston Nagy",
+    "url": "https://github.com/agostone"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/agostone/agna-node-memwatch.git"
+  },
+  "license": "WTFPL",
+  "devDependencies": {
+    "jasmine": "2.4.x"
+  },
+  "dependencies": {
+    "lodash": "3.10.x",
+    "memwatch-next": "0.2.x"
+  }
+}
