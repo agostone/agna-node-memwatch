@@ -117,6 +117,7 @@ $ jsdoc --verbose -c ./jsdoc/configuration.json MemWatch.js
 ## Future development?
 - More sophisticated wildcarding. How about rexep? How about sub-property wildcarding?
 - How about ES6ifying? =}
+- rubberduck for wrapping? =}
 
 ## Licensing
 agna-node-memwatch is free software.
