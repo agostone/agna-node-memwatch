@@ -111,6 +111,9 @@ For more information check the "Heap Usage" section here: https://www.npmjs.com/
 ## Running the tests
 $ jasmine
 
+## Creating the docs
+$ jsdoc --verbose -c ./jsdoc/configuration.json MemWatch.js
+
 ## Future development?
 - More sophisticated wildcarding. How about rexep? How about sub-property wildcarding?
 - How about ES6ifying? =}

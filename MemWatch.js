@@ -1,5 +1,9 @@
 'use strict';
 
+/**
+ * @module agna-node-memwatch
+ */
+
 var _ = require('lodash');
 var _MemWatch = require('memwatch-next');
 var _EventEmitter = require('events').EventEmitter;
@@ -8,8 +12,10 @@ var _inherits = require('util').inherits;
 var _instance = void 0;
 
 /**
- * @module agna-node-memwatch
+ * Constructor
+ *
  * @class
+ * @returns {Memwatch}
  */
 function MemWatch() {
 
@@ -109,16 +115,43 @@ MemWatch.prototype.wrapHeapDiff = function (target, functionName) {
   });
 };
 
+/**
+ * Id for the start of difference calculation event.
+ *
+ * @type {String}
+ */
 MemWatch.HEAP_DIFF_START = 'heapDiffStart';
 Object.defineProperty(MemWatch, 'HEAP_DIFF_START', { writeable: false });
 
+/**
+ * Id for the end of difference calculation event
+ *
+ * @type {String}
+ */
 MemWatch.HEAP_DIFF_END = 'heapDiffEnd';
 Object.defineProperty(MemWatch, 'HEAP_DIFF_END', { writeable: false });
 
+/**
+ * Id for the memory leak event
+ *
+ * @type {String}
+ */
 MemWatch.LEAK = 'leak';
 Object.defineProperty(MemWatch, 'LEAK', { writeable: false });
 
+/**
+ * Id for the stats event
+ *
+ * @type {String}
+ */
 MemWatch.STATS = 'stats';
 Object.defineProperty(MemWatch, 'STATS', { writeable: false });
 
+/**
+ * Exports the MemWatch class, to get a glass instance see the examples below.
+ *
+ * @example var instance = (require('agna-node-memwatch'))();
+ * @example var MemWatch = require('agna-node-memwatch'); var instance = MemWatch();
+ * @example var MemWatch = require('agna-node-memwatch'); var instance = new MemWatch();
+ */
 module.exports = MemWatch;

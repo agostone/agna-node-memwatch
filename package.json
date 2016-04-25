@@ -18,7 +18,8 @@
   },
   "license": "WTFPL",
   "devDependencies": {
-    "jasmine": "2.4.x"
+    "jasmine": "2.4.x",
+    "jsdoc": "3.4.x"
   },
   "dependencies": {
     "lodash": "3.10.x",

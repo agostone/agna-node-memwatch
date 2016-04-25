@@ -1,0 +1,11 @@
+{
+  "tags": {
+    "dictionaries": [ "jsdoc" ]
+  },
+  "plugins": [],
+  "opts": {
+    "template": "templates/default",
+    "encoding": "utf8",
+    "destination": "./jsdoc/api"
+  }
+}
